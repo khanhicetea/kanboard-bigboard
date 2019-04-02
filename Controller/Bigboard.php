@@ -50,7 +50,7 @@ use Kanboard\Model\UserMetadataModel;
         'search' => $search,
         'plugin' => "Bigboard",
         );
-          echo $this->template->render('project_header/search', array(
+          echo $this->template->render('bigboard:board/search', array(
               'filters' => $filters,
               'users_list' => $this->userModel->getActiveUsersList(),
           ));
